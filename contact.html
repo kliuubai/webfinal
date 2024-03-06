@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kaitlyn</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.webp">
+    <style>
+      input[type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+      }
+
+      /* Style the submit button with a specific background color etc */
+      input[type=submit] {
+        font-size: 15px;
+        background-color: lightskyblue;
+        color: white;
+        padding: 15px 50px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      /* When moving the mouse over the submit button, add a darker green color */
+      input[type=submit]:hover {
+        background-color: darkblue;
+      }
+
+      /* Add a background color and some padding around the form */
+      .form-container {
+        margin-left:150px;
+        margin-right: 150px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav-container">
+        <a href="index.html">HOME</a>
+        <a href="classes.html">CLASSES</a>
+        <a href="interests.html">INTERESTS</a>
+        <a href="contact.html" class="active-nav">CONTACT</a>
+        <a href="other.html">OTHER</a>
+    </div>
+
+    <h1 style="margin-top: 30px; margin-bottom: 50px; text-align: center;">Send me a message!</h1>
+
+    <img src="images/waving-bunny.png" style="width: 170px;position: absolute;right: 170px;top: 500px;">
+
+    <div class="form-container">
+        <form action="mailto:123@email.com" method="post" enctype="text/plain">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name...">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+      
+          <label for="purpose">Purpose of Message</label>
+          <select id="purpose" name="purpose">
+            <option value="school">School</option>
+            <option value="personal">Personal</option>
+            <option value="other">Other</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+          
+          <p>Warning: clicking submit will open your Outlook.</p>
+
+          <input type="submit" value="Submit">
+          </form>
+    </div>
+
+    <div class="footer" style="margin-top: 80px;">
+      <p>Contact Info</p>
+      <ul class="footer-ul" style="color: darkblue;">
+          <li><span>Email:</span> 123@email.com</li>
+          <li><span>Phone:</span> 123-456-789</li>
+      </ul>
+      <p>Site Contents</p>
+      <ol class="footer-ol">
+          <li>Home</li>
+          <li>Classes</li>
+          <li>Interests</li>
+          <li>Contact</li>
+          <li>Other</li>
+      </ol>
+  </div>
+
+
+</body>
+</html>

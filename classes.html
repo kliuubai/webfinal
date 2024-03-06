@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes | Kaitlyn</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>  
+    <link rel="icon" type="image/x-icon" href="images/favicon.webp">
+</head>
+<body>
+  <div class="nav-container">
+    <a href="index.html">HOME</a>
+    <a href="classes.html" class="active-nav">CLASSES</a>
+    <a href="interests.html">INTERESTS</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="other.html">OTHER</a>
+</div>
+
+
+    <h1 style="margin-top: 30px; margin-left: 40px;">My Favorite Classes</h1>
+
+    <div id="gallery-container">
+        <div class="gallery">
+            <a target="_blank" href="images/spanish.webp">
+              <img src="images/spanish.webp" width="800" height="800">
+            </a>
+            <div class="desc">Spanish</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="images/web-class.jpg">
+              <img src="images/web-class.jpg" width="800" height="800">
+            </a>
+            <div class="desc">WEB</div>
+          </div>
+    
+          <div class="gallery">
+            <a target="_blank" href="images/science.jpg">
+              <img src="images/science.jpg" width="800" height="900">
+            </a>
+            <div class="desc">Science</div>
+          </div>
+    </div>
+
+
+<div id="btnDiv">
+<button id="spanishBtn" class="modalBtn">Read More</button>
+<button id="webBtn" class="modalBtn">Read More</button>
+<button id="sciBtn" class="modalBtn">Read More</button>
+</div>
+
+<div id="spanishModal" class="modal">
+    <div id="spanishModalContent" class="modalContent">
+      <span id="spanishClose" class="close">&times;</span>
+      <p>I enjoy Spanish because it's helped me understand the power of languages and the way I use language in my day-to-day life. Learning Spanish has helped me understand more of how English works, and it also allows me to communicate with a lot more people.</p>
+    </div>
+</div>
+
+<div id="webModal" class="modal">
+    <div id="webModalContent" class="modalContent">
+        <span id="webClose" class="close">&times;</span>
+        <p>I enjoy WEB because code has always seemed daunting to me, but WEB has managed to simplify it and make it more digestible. It's given me conversation topics with my parents because I'm learning about the fields that they work in, which is pretty cool.</p>
+    </div>
+</div>
+
+<div id="sciModal" class="modal">
+  <div id="sciModalContent" class="modalContent">
+      <span id="sciClose" class="close">&times;</span>
+      <p>I enjoy science because it's an extremely hands-on class that emphasizes the importance of finding answers on your own. Like real scientists, we make hypotheses, do experiments, and try to find answers to our original questions using the power of our own critical thinking.</p>
+  </div>
+</div>
+
+
+</body>
+</html>
